@@ -1,3 +1,5 @@
+const Person = require('./basics6')
+
 let day = 'tuesday '
 console.log(day.length) //7
 let subDay = day.slice(0,4)
@@ -32,3 +34,6 @@ while(value !== -1){
     value = newQuote.indexOf("day", value+1)
 }
 console.log(count)
+
+let person2 = new Person("Hazel", "Bastug")
+console.log(person2.fullName())
