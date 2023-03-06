@@ -2,10 +2,10 @@
   "name": "cypress",
   "version": "1.0.0",
   "devDependencies": {
-    "cypress": "^12.6.0"
+    "cypress": "^12.6.0",
+    "cypress-iframe": "^1.0.1"
   },
   "scripts": {
     "cypress:open": "cypress open"
   }
 }
-
