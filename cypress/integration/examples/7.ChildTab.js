@@ -14,6 +14,24 @@ describe('Suite', function () {
         cy.go('back')
         cy.url().should('include', 'com/AutomationPractice/')
 
+        //Cypress doesn't support cross domain
+    });
+
+});
+
+describe('Suite', function () {
+    it('Handling Child Windows using Cypress', function () {
+        cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+        cy.get('#opentab').then(function (elm){
+            const url = elm.prop('href')
+            cy.log(url)
+            cy.visit(url)
+            // Cypress doesn't support cross domain
+            // this test will fail because visit() method doesn't support different domain
+        })
+
+
+
     });
 
 });
