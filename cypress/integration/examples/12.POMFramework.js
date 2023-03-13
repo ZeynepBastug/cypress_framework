@@ -1,6 +1,6 @@
-import HomePage from "./pages/HomePage";
-import ShopPage from "./pages/ShopPage";
-import CheckoutPage from "./pages/CheckoutPage";
+import HomePage from "../../support/pages/HomePage";
+import ShopPage from "../../support/pages/ShopPage";
+import CheckoutPage from "../../support/pages/CheckoutPage";
 
 
 describe('First Test Suite', function () {

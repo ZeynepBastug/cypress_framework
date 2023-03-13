@@ -2,6 +2,9 @@
   "ulke": "Turkey",
   "name": "Zeynep",
   "gender": "Female",
+  "email": "zeynep@dfds.com",
+  "password": "ankara",
+  "dateOfBirth": "1994-06-30",
   "productName": ["Blackberry", "Nokia Edge"],
   "success": "Success! Thank you! Your order will be delivered in next few weeks :-)."
 

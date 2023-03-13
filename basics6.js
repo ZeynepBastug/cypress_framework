@@ -28,3 +28,7 @@
 // console.log(person.location)
 // console.log(person.fullName())
 // console.log(person1.fullName())
+
+
+
+

@@ -2,10 +2,27 @@
   "name": "cypress",
   "version": "1.0.0",
   "devDependencies": {
-    "cypress": "^12.6.0",
+    "cypress": "latest",
     "cypress-iframe": "^1.0.1"
   },
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress": "node_modules\\.bin\\cypress run",
+    "headMode": "npm run cypress -- --headed",
+    "chrome": "npm run cypress -- --browser chrome",
+    "recordDashboardTest": "npm run test -- --record --key e44d7156-a127-442b-9609-eae7288b2230"
+  },
+  "cypress/cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/results.json",
+      "formater": "cucumber-json-formatter"
+    }
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress": "latest",
+    "multiple-cucumber-html-reporter": "^3.2.0"
   }
 }
